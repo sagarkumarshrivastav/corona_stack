@@ -1,0 +1,488 @@
+/* Home style*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, #ff6b6b,#5f27cd);
+    background-attachment: fixed;
+
+}
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 34px;
+    box-shadow: 0 2px 5px rgba(0,0,0.2);
+
+
+}
+.logo{
+    color: #069370;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    background: #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    
+}
+nav{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+    border-radius: 20px;
+
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: #069370;
+    color: #fff;
+    transition: 0.5s;
+}
+@media (max-width:1200px)
+{
+    header{
+        margin: 20px;
+    }
+}
+@media (max-width:768px)
+{
+    .menu-toggle{
+        margin: 20px;
+    }
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.container .hexagon{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 50px 20px 70px;
+}
+.container .hexagon::before
+{
+content: '';
+position: absolute;
+bottom: -70px;
+width: 100%;
+height: 60px;
+background: radial-gradient(rgba(0,0,0,0.5),transparent,transparent);
+border-radius: 50%;
+transition: 0.5s;
+}
+.container .hexagon:hover::before{
+    opacity: 0.8;
+    transform:scale(0.8)
+
+}
+.container .hexagon .shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(17, 16, 16);
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    transition: 0.5s;
+}
+.container .hexagon:hover .shape{
+    transform: translateY(-30px);
+
+}
+.container .hexagon .shape img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+
+}
+.container .hexagon .shape .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg,#03a9f4,rgba(3,169,244,0.5));
+    color: aliceblue;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .hexagon:hover .shape .content
+{
+    opacity: 1;
+}
+.text-deko{
+    color: rgb(249, 250, 250);
+    text-align: center;
+}
+
+  
+  
+
+/* profile Form */
+.regform{
+    width: 800px;
+    background-color: rgb(0,0,0,6);
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.main{
+    background-color: rgba(0,0,0,0.5);
+    width: 800px;
+    margin: auto;
+}
+form{
+    padding: 10px;
+
+}
+#name{
+    width: 100%;
+    height: 100px;
+
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.firstname{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.lastname{
+    position: relative;
+    left: 417px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+.firstlabel{
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 202px;
+    top: -45px;
+}
+.lastlabel{
+    
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 175px;
+    top: -45px;
+
+}
+.company{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+.email{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+
+}
+.code{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 95px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.number{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 260px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.area-code{
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: 54px;
+    top: -4px;
+}
+.phone-number{
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: -110px;
+    top: -4px;
+}
+.option{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 532px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+}
+.option option{
+    font-size: 20px;
+
+}
+#coustomer{
+    margin-left: 25px;
+    color: #fff;
+    font-size: 18px;
+}
+.radio{
+    display: inline-block;
+    padding-right:70px ;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #fff;
+}
+.radio input{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+button{
+    background-color: #3baf9f;
+    display: block;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: #fff ;
+    cursor: pointer;
+    transition: 0.25s;
+}
+button:hover{
+    background-color: #5390f5;
+}
+
+  /*  Bmi style*/  
+.bmi1{
+    width: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #ee5253;
+    text-align: center;
+
+}
+.h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.hight{
+    text-align: left;
+    margin-left: 150px;
+
+}
+#w,#h{
+    color: #222f3e;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #341f97;
+    width: 200px;
+
+}
+#w:focus,#h:focus{
+    border-bottom: 2px solid #341f97;
+    width: 300px;
+    transition: 0.5s;
+}
+#result{
+    color: #341f97;
+
+}
+#btn{
+    font-family: inherit;
+    margin-top: 10px;
+    margin-left: 180px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(120deg,#ff6b6b,#5f27cd);
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+
+}
+#btn:hover{
+    box-shadow: 1px 1px 10px #341f97;
+}
+#info{
+    font-size: 12px;
+    font-family: inherit;
+
+
+}
+/* about us style*/
+.contain{
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin: 240px auto;
+
+}
+.contain .boxx{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px );
+    background: #000;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+
+
+}
+.contain .boxx .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.contain .boxx:hover .icon{
+
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+.contain .boxx .icon .imgg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    object-fit: cover;
+    height: 50%;
+    
+
+}
+.contain .boxx .cont
+{
+    position: absolute;
+    height: calc(100%-100px);
+    top: 100px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+    color: #fff;
+}
+.contain .boxx:hover .cont
+{
+    top: 100px;
+    opacity: 1;
+
+}
+
